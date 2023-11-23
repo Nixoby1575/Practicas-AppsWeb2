@@ -1,0 +1,22 @@
+version: '3'
+services:
+  categoria:
+    build:
+      context: .
+      dockerfile: ./src/presentation/categoria/Dockerfile
+    ports:
+      - '3001:3001'
+
+  producto:
+    build:
+      context: .
+      dockerfile: ./src/presentation/producto/Dockerfile
+    ports:
+      - '3002:3002'
+
+  proveedor:
+    build:
+      context: .
+      dockerfile: ./src/presentation/proveedor/Dockerfile
+    ports:
+      - '3003:3003'
